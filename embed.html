@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width, initial-scale=1.0">
-<title>phosphorus</title>
+<title>Phosphorus</title>
 <link rel=stylesheet href=player.css>
 <link rel=stylesheet href=embed.css>
 <div class=controls>
@@ -9,12 +9,12 @@
   <span class=stop></span>
   <span class=pause></span>
   <span class=flag title="Shift+click to enable turbo mode."></span>
-  <div class=turbo>Turbo Mode</div>
+  <div class=turbo title="Turbo Mode">Turbo Mode</div>
   <span class=full-screen></span>
 </div>
 <div class=player></div>
 <div class=internal-error>
-  An internal error occurred. <a id=error-bug-link target=_blank href=https://github.com/nathan/phosphorus/issues/new>Click here</a> to file a bug report.
+  An internal error occurred. <a id=error-bug-link target=_blank href=https://github.com/nathan/phosphorus/issues/new title="Click here">Click here</a> to file a bug report.
 </div>
 <script src=fonts.js></script>
 <script src=//cdnjs.cloudflare.com/ajax/libs/jszip/2.4.0/jszip.js></script>
@@ -61,7 +61,7 @@
   P.player.load(projectId, function(stage) {
     if (autoStart || !hasUI) stage.triggerGreenFlag();
   }, function(title) {
-    document.title = title ? title + ' \xb7 phosphorus' : 'phosphorus';
+    document.title = title ? title + ' \xb7 Phosphorus' : 'Phosphorus';
   });
 
 }());
